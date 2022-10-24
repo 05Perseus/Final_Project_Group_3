@@ -45,3 +45,4 @@
 ## Zoom
 - Calendar invites should include Zoom links and entry codes
 - Free Zoom has a max time of 40 minutes, then force quits. If meeting time is exceeding, rejoin the meeting using the original link.
+- Google free service could also be considered for meetings expected to be longer that 40 min.
