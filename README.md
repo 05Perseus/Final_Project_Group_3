@@ -1,7 +1,20 @@
 # Airline Delay Prediction Model
 
 ## Overview
-- Application to predict flight delays using machine learning.
+- Application run in browser to predict flight delays using machine learning and weather data API.
+
+## Why
+- Flight delay can be a waste of money and time. Predicting the probability of a weather delay is exciting and useful.
+
+## Questions We Hope To Answer
+
+- Perform an Exploratory Data Analysis on the data set. 
+- Which carriers are most and least reliable for on-time departure? 
+- Which airports are best and worst for on-time departures? 
+- Which features in the data set are most correlated with a departure delay?
+- Use the dataset to make predictions. Can you accurately predict a departure delay?
+- Use the raw data files to re-tool the dataset and make our own prediction problem. Can we predict the reason for departure delay? Can we predict arrival delay?
+
 
 ## Software
 - See technology.md
