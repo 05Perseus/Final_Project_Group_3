@@ -31,7 +31,7 @@
 
 ## Issues
 - Each Application enhancements should have the following creation flow:
-    -- Create an Issue with the Enhancement Feature as the title (i.e. `Provisional Machine Learning Model`)
+  - Create an Issue with the Enhancement Feature as the title (i.e. `Provisional Machine Learning Model`)
     -- If the Issue falls within your project duties, assign the Issue to yourself. Otherwise, a team member will assign themselves open Issues that fit their project duties or skill set.  
     -- If a new Issues is blocked by another issue, add the number of the Issue in the new Issue comments.  
     -- Add the appropriate label to the Issue (i.e. `documentation`, `enhancement` etc.)
