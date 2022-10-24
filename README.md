@@ -1,10 +1,14 @@
 # Airline Delay Prediction Model
-
+![image](Resources/plane.gif)
 ## Overview
 - Application run in browser to predict flight delays using machine learning and weather data API.
 
 ## Why
 - Flight delay can be a waste of money and time. Predicting the probability of a weather delay is exciting and useful.
+
+## Data Set
+- We Chose a [Kaggle data set](https://www.kaggle.com/datasets/threnjen/2019-airline-delays-and-cancellations)
+- The data set is sourced from the Bureau of Transportation Statistics, organized and has a preliminary Machine learning model. 
 
 ## Questions We Hope To Answer
 
