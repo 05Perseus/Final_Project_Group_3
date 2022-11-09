@@ -1,0 +1,2 @@
+SELECT unique_id, station, dname, ddate, prcp, snow, snwd, tmax, awnd, tmin, dmonth, day_of_month, day_of_week, op_unique_carrier, tail_num, op_carrier_fl_num, origin_airport_id, origin, origin_city_name, dest_airport_id, dest, dest_city_name, crs_dep_time, dep_time, dep_delay_new, dep_del15, dep_time_blk, crs_arr_time, arr_time, arr_delay_new, arr_del15, arr_time_blk, cancelled, cancellation_code, crs_elapsed_time, actual_elapsed_time, distance, distance_group, carrier_delay, weather_delay, nas_delay, security_delay, late_aircraft_delay
+	FROM public.airport_flight_data;
