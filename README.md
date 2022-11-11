@@ -62,6 +62,16 @@
  - The model may need multiple algorithms to make an accurate prediction.
  -  We can calculate logistic regression flight delay by adding an activation function as the final step to our linear model.
  - This converts the linear regression output to a probability.
+ 
+  # Database
+
+ ## Database containing reference data and feature data to feed our machine learning model
+
+ `We are using a Postgres SQL Database to hold and join our data together.`
+
+ - We will use this database to build our connection string to pull into the ML model.
+ - We have joined tables together to incorporate our detailed weather data with our delay data.
+ 
  # Questions
  - What type of Logistical regression algorithms will offer the best prediction of flight departure delay?
  - Can we make a prediction of planes that could need service based on CARRIER_DELAY and unique values in TAIL_NUM?
