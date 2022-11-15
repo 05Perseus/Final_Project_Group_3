@@ -50,7 +50,9 @@ CREATE TABLE airport_weather_2019 (
 	AWND REAL,
 	TMIN INTEGER
 );
--- Read January table
+
+-- Lire January table
+
 SELECT * FROM airport_weather_2019;
 SELECT * FROM ONTIME_REPORTING_01;
 -- Drop tables if necessary 
@@ -594,13 +596,4 @@ SELECT *
 FROM final_ontime_reporting
 INNER JOIN airport_weather_2019 
 	ON final_ontime_reporting.ddate = airport_weather_2019.ddate;
-
-	
-
-
-
-
-
-
-
 
