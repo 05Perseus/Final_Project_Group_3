@@ -1,4 +1,6 @@
-# Airline Delay Prediction Model
+# Final_Project_Group_3
+
+ # Airline Delay Prediction Model
 ![image](Resources/plane.gif)
 ## Overview
 - Application run in browser to predict flight delays using machine learning and weather data API.
@@ -46,3 +48,30 @@
 - Calendar invites should include Zoom links and entry codes
 - Free Zoom has a max time of 40 minutes, then force quits. If meeting time is exceeding, rejoin the meeting using the original link.
 - Google free service could also be considered for meetings expected to be longer that 40 min.
+ 
+ 
+ # Machine Learning Model
+
+ ## Logistic Regression to Predict Flight Departure Delay
+
+ `Logistic Regression is a statistical method for predicting binary outcomes from data.`
+
+ - We will use this model to take the DEP_DEL15 dimension data and split flights it into classes.
+ - The DEP_DEL15 dimension data is "0" for ontime departure and "1" for a delay.
+ - The DEP_DEL15 dimension data is boolean confirming if the minute count in DEP_DELAY_NEW is greater than 15 min. Is is industry knowledge that flight are not counted as late unless the delay is > 15.
+ - The model may need multiple algorithms to make an accurate prediction.
+ -  We can calculate logistic regression flight delay by adding an activation function as the final step to our linear model.
+ - This converts the linear regression output to a probability.
+ 
+  # Database
+
+ ## Database containing reference data and feature data to feed our machine learning model
+
+ `We are using a Postgres SQL Database to hold and join our data together.`
+
+ - We will use this database to build our connection string to pull into the ML model.
+ - We have joined tables together to incorporate our detailed weather data with our delay data.
+ 
+ # Questions
+ - What type of Logistical regression algorithms will offer the best prediction of flight departure delay?
+ - Can we make a prediction of planes that could need service based on CARRIER_DELAY and unique values in TAIL_NUM?
