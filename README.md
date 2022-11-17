@@ -66,6 +66,7 @@
   # Database
 
  ## Database containing reference data and feature data to feed our machine learning model
+ Three branches wer created which contained information about the database: FK_Circle_images, FK_Circle, FK_dummmy_db.
 
  `We are using a Postgres SQL Database to hold and join our data together.`
 
