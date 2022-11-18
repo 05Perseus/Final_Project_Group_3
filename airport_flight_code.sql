@@ -37,8 +37,8 @@ CREATE TABLE ONTIME_REPORTING_01 (
 	LATE_AIRCRAFT_DELAY INTEGER
 );
 
--- Create Weather table for 2019
-CREATE TABLE airport_weather_2019 (
+-- Create Weather table 
+CREATE TABLE airport_weather (
 	UNIQUE_ID VARCHAR(50) PRIMARY KEY NOT NULL UNIQUE,
 	STATION VARCHAR(50),
 	dNAME VARCHAR(100),
@@ -50,13 +50,11 @@ CREATE TABLE airport_weather_2019 (
 	AWND REAL,
 	TMIN INTEGER
 );
-
--- Lire January table
-
-SELECT * FROM airport_weather_2019;
+-- Read January table
+SELECT * FROM airport_weather;
 SELECT * FROM ONTIME_REPORTING_01;
 -- Drop tables if necessary 
-Drop table airport_weather_2019;
+Drop table airport_weather;
 Drop table ONTIME_REPORTING_01;
 
 -- Create February onTime reporting table
@@ -594,6 +592,87 @@ Drop table final_ontime_reporting;
 --Join the final table to the weather table
 SELECT *
 FROM final_ontime_reporting
-INNER JOIN airport_weather_2019 
-	ON final_ontime_reporting.ddate = airport_weather_2019.ddate;
+INNER JOIN airport_weather 
+	ON final_ontime_reporting.ddate = airport_weather.ddate;
+	
+-- Create combine flight table
+CREATE TABLE combine_flight_2020 (
+	ONTIME_ID INTEGER PRIMARY KEY NOT NULL,
+	FlightDate DATE,
+	Airline VARCHAR(50),
+	Origin VARCHAR(3),
+	DEST VARCHAR(3),
+	Cancelled VARCHAR(5),
+	Diverted VARCHAR(5),
+	CRSDepTime INTEGER,
+	DepTime INTEGER,
+	DepDelayMinutes INTEGER,
+	DepDelay INTEGER,
+	ArrTime INTEGER,
+	ArrDelayMinutes INTEGER,
+	AirTime INTEGER,
+	CRSElapsedTime INTEGER,	
+	ActualElapsedTime INTEGER,	
+	Distance INTEGER,
+	Year INTEGER,
+	Quarter INTEGER,
+	Month INTEGER,
+	DayofMonth INTEGER,	
+	DayOfWeek INTEGER,
+	Marketing_Airline_Network VARCHAR(3),	
+	Operated_or_Branded_Code_Share_Partners VARCHAR(50),	
+	DOT_ID_Marketing_Airline INTEGER,	
+	IATA_Code_Marketing_Airline	VARCHAR(3),
+	Flight_Number_Marketing_Airline INTEGER,
+	Operating_Airline VARCHAR(2), 	
+	DOT_ID_Operating_Airline INTEGER,	
+	IATA_Code_Operating_Airline	VARCHAR(3),
+	Tail_Number	VARCHAR(6),
+	Flight_Number_Operating_Airline INTEGER,
+	OriginAirportID	INTEGER,
+	OriginAirportSeqID INTEGER,	
+	OriginCityMarketID INTEGER,	
+	OriginCityName VARCHAR(50),	 
+	OriginState	VARCHAR(2),
+	OriginStateFips	INTEGER,
+	OriginStateName	VARCHAR(50),
+	OriginWac INTEGER,	
+	DestAirportID INTEGER,	
+	DestAirportSeqID INTEGER,	
+	DestCityMarketID INTEGER,	
+	DestCityName VARCHAR(50),	
+	DestState VARCHAR(2),	
+	DestStateFips INTEGER,
+	DestStateName VARCHAR(50),	
+	DestWac INTEGER,	
+	DepDel15 INTEGER, 	
+	DepartureDelayGroups INTEGER,	
+	DepTimeBlk VARCHAR(9),	
+	TaxiOut INTEGER, 	
+	WheelsOff INTEGER,	
+	WheelsOn INTEGER,	
+	TaxiIn INTEGER,	
+	CRSArrTime INTEGER,	
+	ArrDelay INTEGER,	
+	ArrDel15 INTEGER,	
+	ArrivalDelayGroups INTEGER,	
+	ArrTimeBlk VARCHAR(9),
+	DistanceGroup INTEGER,	
+	DivAirportLandings INTEGER
+);
+
+--Read the the combine table
+SELECT * FROM combine_flight_2020;
+
+-- Drop ontime_id column
+ALTER TABLE combine_flight_2020
+DROP COLUMN ontime_id;
+	
+
+
+
+
+
+
+
 
