@@ -1,13 +1,41 @@
-Presentation notes
+# Self_Assessment
+In our Airflight Project, I was responsible for the database as a whole. 
+- I mocked up the database,
+- Created the ERD schema,
+- Identify primary and foreign keys,
+- Make sure machine learning module is
+connected to the provisional database,
+- I used SQL to create the on_time_reporting table for the 12 months of the year as well as the weather_data table
+- I apprend all the 12 months tables because they were all in diferents csv files.
+- Then I joined the final on_time_reporting table to the weather data
+- This final table was the one we exported to do our machine learning analysis. 
 
-Here are summary of the work we have done to get ready for the presentation
+I had a lot of challenge importing the data because the csv data types were not correct so I had the make sure I change the data types. 
+I also had to create a few colums like "DATE" to be able to so the join and the "unique_ID" to have a primary key for us to import the data into sql
+
+# Team_Assessment 
+Here are summary of the work we have done to get ready for the project
 Made a google slides and define who will take care of what sections
-- Fatima: I will be presenting the database 
-- Matthew: Will do the project presentation 
-- Yunkai: will discuss about result of the analysis and future analysis
+- Matthew: Talked about the project presentation, why we've choosen this topic and what question are we trying to answer
+- Fatima: I present the database, how i got it into SQL, how I used the CREATE, APPEND and JOIN tables functions
 - Travers: will present our machine learning model
+- Yunkai: went over about result of the analysis and future analysis , also anything we could have done better
 
-We made sure our lies are primarily images or graphics
-Our images are cleared
-All team members will present equal proportions
-The dashboard will be presented in real time
+As a team, we made sure 
+- our slides are primarily images or graphics
+- Our images are cleared
+- All team members will present equal proportions
+- The dashboard will be presented in real time
+
+# Challenge
+- Choose topic took a lot of time
+- Time management for milestones 
+- Use more tools to visualize the data
+- Role assignment unclear
+
+
+# Summary of the project
+
+Airflight delay could be a very frustrating experience a customer could go through. We, as a group, decided to predict airflight that could help customer better organize their travel plan.
+In 2020, As there were 369 million airline passengers that year roughly 37,000,000 passengers experience delays
+We will use machine learning algorithms with the flight data, weather data, airport data to predict if a flight will be delayed or not. Let people have some sort of certainty with their travels.
