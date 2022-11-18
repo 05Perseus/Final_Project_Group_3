@@ -75,8 +75,8 @@
  
   ## Our presentation of our Exploration, Analysis, ML Model, and our Results can be found at the link below:
 
- - [Click here for an amazing slide deck!](https://docs.google.com/presentation/d/1tsH-uCpJbyZxJWM_NFydB71jt9i8ImbCPHqcnklpPA4/edit#slide=id.g14fddfbac23_0_99)
- - [Click here for an amazing looking dashboard!](https://public.tableau.com/app/profile/matthew.hand2472/viz/ArrivalDelayDashboards/Dashboard1?publish=yes)
+ - [Click here for an amazing slide deck that speaks to our project!](https://docs.google.com/presentation/d/1iCo-UlKFytBnuAeG5QEaCsWtdLOWckCUxSB43x0JV-A/edit#slide=id.gc6f80d1ff_0_0)
+ - [Click here for an amazing looking dashboard that demonstrates what we learned from our analysis!](https://public.tableau.com/app/profile/matthew.hand2472/viz/ArrivalDelayDashboards/Dashboard1?publish=yes)
 
 
  
