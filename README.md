@@ -48,13 +48,12 @@
 - Calendar invites should include Zoom links and entry codes
 - Free Zoom has a max time of 40 minutes, then force quits. If meeting time is exceeding, rejoin the meeting using the original link.
 - Google free service could also be considered for meetings expected to be longer that 40 min.
- 
- 
- # Machine Learning Model
-
- ## Logistic Regression to Predict Flight Departure Delay
 
  # Machine Learning Model
+ 
+ ## Dependencies
+ 
+ ![dependencies](images/dependencies.png)
 
  ## Logistic Regression to Predict Flight Arrival Delay
 
@@ -96,13 +95,18 @@
  
  - The sample produced an acuracy scroe of `0.993522669243076`
  - We can see from the confusion matrix that the `true positive` and `true negative` rate reflect the accuracy score.
- ![matrix](Resources/images/matrix.png)
+ ![matrix](images/matrix.png)
  
  ### Feature importance
  
  - We found that the feature `CRSDepTime` ranked highest among the 13 training features at `49%`
  - The feature data is the scheduled departure time, stored as int64.
- ![feature](Resources/images/ml_data.png)
+ 
+ ![feature](images/ml_data.png)
+ 
+ ![feature_importance](images/feature_importance.png
+ 
+ 
  
   # Database
 
