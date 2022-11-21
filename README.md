@@ -104,7 +104,7 @@
  
  ![feature](images/ml_data.png)
  
- ![feature_importance](images/feature_importance.png
+ ![feature_importance](images/feature_importance.png)
  
  
  
