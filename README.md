@@ -54,14 +54,55 @@
 
  ## Logistic Regression to Predict Flight Departure Delay
 
+ # Machine Learning Model
+
+ ## Logistic Regression to Predict Flight Arrival Delay
+
  `Logistic Regression is a statistical method for predicting binary outcomes from data.`
 
  - We will use this model to take the DEP_DEL15 dimension data and split flights it into classes.
- - The DEP_DEL15 dimension data is "0" for ontime departure and "1" for a delay.
- - The DEP_DEL15 dimension data is boolean confirming if the minute count in DEP_DELAY_NEW is greater than 15 min. Is is industry knowledge that flight are not counted as late unless the delay is > 15.
- - The model may need multiple algorithms to make an accurate prediction.
+ - The ArrDel15 dimension data is "0" for ontime departure and "1" for an arrival delay.
+ - The dimension data is boolean confirming if the minute count in Arr_Delay_NEW is greater than 15 minutes. It is industry knowledge that flight are not counted as late unless the delay is > 15.
+ 
+ ## Features used
+ 
+ - The training model inlncludes the following features: 
+   `Flight_Number_Marketing_Airline`,
+    `Cancelled`,
+    `Diverted`,
+    `CRSDepTime`,
+    `DepTime`,
+    `DepDelayMinutes`,
+    `OriginAirportID`,
+    `DestAirportID`,
+    `TaxiOut`,
+    `TaxiIn`,
+    `CRSArrTime`,
+    `ArrDelay`, `ArrDel15`
+## Algorithm  
  -  We can calculate logistic regression flight delay by adding an activation function as the final step to our linear model.
  - This converts the linear regression output to a probability.
+ - We used `Oversampling` to see the accurtacy of arrival delays.
+ 
+ ## Results 
+ 
+ ### Naive Random Oversampling
+ 
+ - We used the imblearn module to create a randomized data set to test the Algorith. 
+ - The oversampling algorithm split the data set into `2,970,512` delayed and ontime flight.
+ - `Counter({0.0: 2970512, 1.0: 2970512})`
+ 
+ ### Accuracy score
+ 
+ - The sample produced an acuracy scroe of `0.993522669243076`
+ - We can see from the confusion matrix that the `true positive` and `true negative` rate reflect the accuracy score.
+ ![matrix](Resources/images/matrix.png)
+ 
+ ### Feature importance
+ 
+ - We found that the feature `CRSDepTime` ranked highest among the 13 training features at `49%`
+ - The feature data is the scheduled departure time, stored as int64.
+ ![feature](Resources/images/ml_data.png)
  
   # Database
 
